@@ -27,4 +27,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::get('/',[HomeController::class,'index']);
 Route::get('/home',[HomeController::class,'redirect'])->name('home');
