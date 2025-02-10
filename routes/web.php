@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,3 +30,6 @@ Route::middleware([
 });
 Route::get('/',[HomeController::class,'index']);
 Route::get('/home',[HomeController::class,'redirect'])->name('home');
+//Doctor
+Route::get('/add-doctor',[DoctorController::class,'addDoctor'])->name('add-doctor');
+Route::post('/add-doctor/store',[DoctorController::class,'addDoctorStore'])->name('add-doctor.store');
