@@ -53,8 +53,8 @@
 
                 <div class="collapse" id="user" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="#">Add Doctor</a>
-                        <a class="nav-link" href="#">Manage Doctors</a>
+                        <a class="nav-link" href="{{ route('add-doctor') }}">Add Doctor</a>
+                        <a class="nav-link" href="{{ route('add-doctor.index') }}">Manage Doctors</a>
                     </nav>
                 </div>
                         @endif
